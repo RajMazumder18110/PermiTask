@@ -3,10 +3,11 @@
   "module": "src/index.ts",
   "type": "module",
   "scripts": {
-    "dev": "bun --watch src/index.ts"
+    "dev": "bun --watch src/index.ts --env-file .env"
   },
   "devDependencies": {
     "@types/bun": "latest",
+    "@types/cookie-parser": "^1.4.8",
     "@types/cors": "^2.8.18",
     "@types/express": "^5.0.1"
   },
@@ -14,8 +15,14 @@
     "typescript": "^5.8.3"
   },
   "dependencies": {
+    "@types/jsonwebtoken": "^9.0.9",
+    "bcryptjs": "^3.0.2",
+    "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
     "express": "^5.1.0",
-    "winston": "^3.17.0"
+    "http-status-codes": "^2.3.0",
+    "jsonwebtoken": "^9.0.2",
+    "winston": "^3.17.0",
+    "zod": "^3.24.4"
   }
 }
